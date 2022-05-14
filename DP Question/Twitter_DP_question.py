@@ -16,7 +16,7 @@ class solution:
 
         #print(m)
         #print(n)
-
+        
         for k in range (n):
             if 2 * task [0] <= k:
                 dp [0][k] = weight[0] 
