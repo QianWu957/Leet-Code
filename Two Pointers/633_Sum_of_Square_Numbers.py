@@ -1,7 +1,9 @@
 from math import sqrt
 class Solution:
     def judgeSquareSum(self, numbers, c: int):
-        assert c >= 0
+
+        if c < 0: return False
+        #assert c >= 0 
         head, tail = 0, int(sqrt(c))
         
         # print(111111111)
