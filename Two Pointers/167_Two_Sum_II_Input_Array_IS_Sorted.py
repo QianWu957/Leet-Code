@@ -4,12 +4,12 @@ class Solution:
         head, tail = 0, len (numbers)-1
 
         while head < tail:
-            sum = numbers[head] + numbers[tail]
+            _sum = numbers[head] + numbers[tail]
 
-            if sum < target:
+            if _sum < target:
                 head += 1
 
-            elif sum > target:
+            elif _sum > target:
                 tail -= 1
         
             else:
@@ -22,3 +22,5 @@ if __name__ == '__main__':
     nulist = [1,2,7,45]
     t = 9
     print(a.twoSum(nulist, t))
+
+    print(sum(nulist))
