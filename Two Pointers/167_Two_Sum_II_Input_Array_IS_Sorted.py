@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, numbers, target: int):
+    def twoSum(self, numbers, target):
         if not numbers: return []
         head, tail = 0, len (numbers)-1
 
