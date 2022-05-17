@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    def twoSum(self, numbers, target: int):
         if not numbers: return []
         head, tail = 0, len (numbers)-1
 
@@ -15,3 +15,10 @@ class Solution:
             else:
                 return [head+1, tail+1]
         return []
+
+
+if __name__ == '__main__':
+    a = Solution()
+    nulist = [1,2,7,45]
+    t = 9
+    print(a.twoSum(nulist, t))
