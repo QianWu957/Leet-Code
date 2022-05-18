@@ -13,8 +13,7 @@ class Solution:
                 head += 1
 
             elif _sum > c:
-                tail -= 1
-            
+                tail -= 1 
         
             else:
                 return True
