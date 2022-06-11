@@ -22,10 +22,13 @@ class Solution:
         if not nums: return 0
         longest = 0
         hashmap = {}
-        
+
+        print(hashmap)
+
         for i in range(len(nums)):
             if nums[i] not in hashmap:
                 hashmap[nums[i]] = 'init'
+        print(hashmap)
 
         for i in range(len(nums)):
             #找到一个合适的开头，如果nums[i]-1存在于hashmap中，那么这个元素就不能作为序列的起点
