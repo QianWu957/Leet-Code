@@ -13,7 +13,7 @@ class Solution:
         freq = []
         for v in hashmap.values():
             freq.append(v[0])
-        print(freq)
+        # print(freq)
 
         degree = max(freq)
 
