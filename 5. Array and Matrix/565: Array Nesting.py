@@ -1,39 +1,31 @@
 class Solution:
     def arrayNesting(self, nums) -> int:
-        # n= len(nums)
-        # seen = [False] * n
-        # # print(seen)
-        # ans=0
-        # for num in nums:
-        #     print(seen[num])
-        #     l =0
-        #     while not seen[num]:
-        #         seen[num] = True
-        #         # print(seen[num])
-        #         l+=1
-        #         num = nums[num]
-        #     ans = max(ans,l)
-        # return ans
-
         res = 0
-        hashset = set()
-        for i in range(len(nums)):
-            if nums[i] in hashset:
+        hashmap = set()
+        
+        for i in range (len(nums)):
+            if nums[i] in hashmap:
                 continue
-            temp = 1
+
+            counter = 1 # Since there is a number to start with, the counter is 1
             index = i
             while nums[index] != i:
-                hashset.add(nums[index])
-                index = nums[index]
-                temp += 1
-            hashset.add(nums[i])
-            res = max(temp, res)
+                hashmap.add(nums[index])
+                index = nums[index] #The value of the current number passes to the index of the next number
+                # nums[index] = i
+                counter+=1
+            hashmap.add(nums[index]) # Although it has jumped out of the while loop, it is still in the for loop. Adding the number under the current pointer to the hashmap can further reduce some for loops
+
+            # hashmap.add(nums[i])
+            # print(hashmap)
+            res = max (counter, res)
         return res
-     
+
 if __name__ == '__main__':
     a = Solution()
     n = [5,4,0,3,1,6,2]
     print(a.arrayNesting(n))
+
 
 
 
