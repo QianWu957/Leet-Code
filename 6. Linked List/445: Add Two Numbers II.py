@@ -12,21 +12,14 @@ class Solution:
         if not l2: return l1
 
         s1, s2, res = [],[],[]
-        p1, p2 = l1, l2
-        while p1:
-            s1.append(p1.val)
-            p1 = p1.next
-        while p2:
-            s2.append(p2.val)
-            p2 = p2.next
-        # while l1:
-        #     s1.append(l1.val)
-        #     l1 = l1.next
-        #     # print(s1)
+        while l1:
+            s1.append(l1.val)
+            l1 = l1.next
+            # print(s1)
         
-        # while l2:
-        #     s2.append(l2.val)
-        #     l2 = l2.next
+        while l2:
+            s2.append(l2.val)
+            l2 = l2.next
         # print(s1)
         # print(s2)
         carryout = 0
