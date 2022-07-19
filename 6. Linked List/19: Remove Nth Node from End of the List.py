@@ -22,7 +22,7 @@ class Solution:
             p2 = p2.next
         
         p1.next = p1.next.next
-
+        #test
         return dummy.next
 
 
