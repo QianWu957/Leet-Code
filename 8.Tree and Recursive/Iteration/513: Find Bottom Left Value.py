@@ -8,7 +8,8 @@ class Solution:
             level_length = len(queue)
             for i in range(level_length):
                 node = queue.popleft()
-                res.append(node.val)
+                if len(res) == 0:
+                    res.append(node.val)
                 if node.left:
                     queue.append(node.left)
                 if node.right:
