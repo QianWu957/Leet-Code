@@ -9,6 +9,7 @@ class Solution:
         self.res = []
     def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:
         from collections import deque
+        
         if not root: return []
         queue = deque([root])
         level = 0
