@@ -33,6 +33,3 @@ class Solution:
             if v == max_:
                 ans.append(k)
         return ans
-
-        
-
