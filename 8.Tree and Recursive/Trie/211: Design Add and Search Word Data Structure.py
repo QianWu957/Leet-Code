@@ -1,5 +1,4 @@
 class WordDictionary:
-
     def __init__(self):
         self.root = {}
         self.end = 'end'
