@@ -17,5 +17,6 @@ class Solution:
             dp[i] = nums[i] + max(dp[:i-1])
         
         return max(dp[-1],dp[-2])
+        # return max(dp[-1])
 
 
