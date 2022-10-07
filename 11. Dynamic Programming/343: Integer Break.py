@@ -10,6 +10,6 @@ class Solution:
 
         for i in range(1,n+1):
             for j in range(i):
-                dp[i] = max(dp[i], j*(i-j), j*dp[i-j])
+                dp[i] = max(dp[i], max(j*(i-j), j*dp[i-j]))
 
         return dp[-1]
