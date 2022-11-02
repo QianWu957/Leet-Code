@@ -2,7 +2,8 @@ class Solution:
     def mostPopularCreator(self, creators: List[str], ids: List[str], views: List[int]) -> List[List[str]]:
 
         # t = [max_view, view, id]
-        hashmap = {}, max_view = 0
+        hashmap = {}
+        max_view = 0
 
         for name, id, view in zip(creators, ids, views):
             t = hashmap[name]
