@@ -17,6 +17,7 @@ class Solution:
             self.res.append(node.val)
             if node.right:
                 queue.insert(0, node.right)
+                
 
             if node.left:
                 queue.insert(0, node.left)
