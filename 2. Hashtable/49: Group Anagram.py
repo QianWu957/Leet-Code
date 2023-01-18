@@ -7,9 +7,16 @@ class Solution:
                 hashmap[keys] = [item]
             else:
                 hashmap[keys].append(item)
-                # print(hashmap)
-        # print(hashmap.values())
-        return list(hashmap.values())
+      
+        comb = list(hashmap.values())
+        # print(list(hashmap.values()))
+        
+        for i in range(len(comb)):
+            if len(comb[i]) > 1:
+                return 11111
+            else:
+                return -1
+        # return list(hashmap.values())
 
 if __name__ == '__main__':
     a = Solution()

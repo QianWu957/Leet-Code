@@ -1,5 +1,6 @@
+import collections
 class Solution:
-    def findAnagrams(self, s: str, p: str) -> List[int]:
+    def findAnagrams(self, s: str, p: str):
         if len(p) > len(s):
             return []
         
@@ -32,6 +33,11 @@ class Solution:
             
         return res
 
-            
+if __name__ == '__main__':
+    a = Solution()
+    s = "cbaebabacd"
+    p = "abc"
+    
+    print(a.findAnagrams(s,p))
 
                
